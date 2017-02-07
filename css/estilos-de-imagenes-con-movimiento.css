@@ -1,0 +1,29 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#sliderpeque{
+	margin: auto;
+	width: 1000px;
+}
+#sliderpeque img{
+	margin-bottom: 15px;
+	width: 220px;
+	height: 200px;
+	/*border-radius: 50%;*/
+	padding-top: 5px;
+}
+
+#sliderpeque h5{
+	text-align: center;
+	font-size: 30px;
+	padding-top: 15px;
+	padding-bottom: 6px;
+	color: #3C3B3B;
+}
+#sliderpeque p{
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 10px;
+	color: grey;
+}

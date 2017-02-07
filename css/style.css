@@ -1,0 +1,3963 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+/*################ logo de la empresa  y el buscador principal ####################*/
+header{
+	width: 100%;
+	height: 75px;
+	position: relative;
+}
+.logo img{
+	margin-top: 5px;
+	margin-left: 100px;
+	margin-bottom: 2px;
+}
+.logo h2{
+	position: absolute;
+	top: 10px;
+	left: 170px;
+	font-size: 30px;
+	font-family: fantasy;
+	color: white;
+}
+.logo h4{
+	position: absolute;
+	top: 50px;
+	left: 170px;
+	font-weight: normal;
+	font-family: fantasy;
+	color: white;
+}
+#buscador{
+	position: absolute;
+	top: 25px;
+	left: 450px;
+}
+#buscador #search{
+	width: 500px;
+	height: 30px;
+	padding-left:15px;
+	font-size: 18px; 
+	background-color:#024756;
+	border: none;
+	color: white;
+}
+#buscador .btn-buscar-p{
+	width: 80px;
+	padding: 6px;
+	font-weight: bold;
+	background-color: #001B22;
+	border: 1px solid #024756;
+	color: white;
+	transition: 1s;
+	cursor: pointer;
+	margin-left: -4px;
+}
+#buscador .btn-buscar-p:hover{
+	padding: 6px;
+	background-color: #5CDCF5;
+	font-weight: bold;
+	border: 1px solid white;
+	padding: 6px;
+	transition: 1s;
+}
+/*################### logos del header ############################################*/
+.logo .fa-user{
+	position: absolute;
+	top: 16px;
+	right: 270px;
+	float: right;
+	font-size: 25px;
+	background-color: white;
+	padding: 4px;
+	border-radius: 50px;
+	color: black;
+}
+.logo span a{
+	padding: 5px;
+	border-radius: 6px;
+	background-color: #001C20;
+	position: absolute;
+	right: 145px;
+	margin-top: 20px;
+	margin-right: 21px;
+	text-decoration: none;
+	font-size: 17px;
+	color: white;
+	transition: 2s;
+}
+.logo span a:hover{
+	color: white;
+	background-color: #017B93;
+}
+/*#############################################################################
+########### estilos de formulario modal de inicio de sesion y de registrarse###
+#############################################################################*/
+#bg-sesion{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	visibility: hidden;
+	z-index: 10000;
+}
+#bg-sesion .content-sesion{
+	margin: 70px auto;
+	width: 450px;
+	height: 520px;
+	background-color: white;
+	padding: 60px;
+	border-radius: 8px;
+	position: relative;
+	font-family: sans-serif;
+}
+#bg-sesion .content-sesion .area-sesion{
+	width: 330px;
+	height: 450px;
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+#bg-sesion .content-sesion .area-sesion .fa-times-circle{
+	font-size: 30px;
+	float: right;
+	margin:-40px -30px 0px 0px;
+	color: black;
+}
+#bg-sesion .content-sesion .area-sesion h3{
+	padding-bottom: 20px;
+	font-size: 30px;
+	color: grey;
+}
+#bg-sesion .content-sesion .area-sesion form label{
+	display: inline-block;
+	font-size: 15px;
+	margin-bottom: 5px;
+	color: grey;
+}
+#bg-sesion .content-sesion .area-sesion form label.error{
+	color: red;
+}
+#bg-sesion .content-sesion .area-sesion form label #email,#password{
+	width: 330px;
+	height: 38px;
+	margin-top: 5px;
+	padding-left: 10px;
+	font-size: 15px;
+	border: 1px solid lightgrey;
+}
+#bg-sesion .content-sesion .area-sesion form label #email,#password:focus{
+	outline: none;
+	border:1px solid darkgrey;
+}
+#bg-sesion .content-sesion .area-sesion form .recuperar-contra{
+	float: left;
+	width: 140px;
+	height: 50px;
+	margin-bottom: 20px;
+}
+#bg-sesion .content-sesion .area-sesion form .recuperar-contra a{
+	font-size: 13px;
+	color: grey;
+}
+#bg-sesion .content-sesion .area-sesion form .recuperar-contra .cerrarSesion{
+	width: 15px;	
+	margin-top: 2px;
+	margin-right: 5px;
+	float: left;
+}
+#bg-sesion .content-sesion .area-sesion form .recuperar-contra label{
+	margin-top: 10px;
+	font-size: 13px;
+}
+#bg-sesion .content-sesion .area-sesion form .btn-login{
+	width: 130px;
+	margin-left: 60px;
+	margin-bottom: 30px;
+	padding: 15px 25px 15px 25px;
+	color: white;
+	font-weight: bold;
+	background-color: #EC020D;
+	box-shadow: inset 0px -5px 20px #770404;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	float: right;
+
+}
+#bg-sesion .content-sesion .area-sesion form .btn-login:hover{
+	background-color: #961212;
+}	
+#bg-sesion .content-sesion .area-sesion form .btn-facebook .fa-facebook-square{
+	font-size: 20px;
+	margin-right: 10px;
+}
+#bg-sesion .content-sesion .area-sesion form .btn-facebook{
+	margin: 0px;
+	padding: 0px;
+	width: 340px;
+	height: 75px;
+	margin-top: 70px;
+	position: relative;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+}
+#bg-sesion .content-sesion .area-sesion form .btn-facebook a{
+	margin: 0px;
+	padding: 0px;
+	padding: 8px;
+	background-color: #44619C;
+	position: absolute;
+	top: 10px;
+	left: 60px;
+	color: white;
+	margin-top: 7px;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: bold;
+}
+#bg-sesion .content-sesion .area-sesion form .btn-facebook a:hover{
+	background-color: #123146;
+}
+#bg-sesion .content-sesion .area-sesion .btn-registrate{
+	text-align: center;
+	margin-top: 30px;
+	font-size: 15px;
+}
+#bg-sesion .content-sesion .area-sesion .btn-registrate a{
+	color:#44619C;
+}
+
+
+
+.logo .fa-cloud-upload {
+	position: absolute;
+	top: 20px;
+	right: 5px;
+	font-size: 20px;
+	color: white;
+	background-color: #001C20;
+	padding: 5px;
+	border-radius: 6px;
+	transition: 2s;
+}
+.logo .fa-cloud-upload:hover {
+	background-color: #017B93;
+}
+/*############## navegacion principal ############################################*/
+nav{
+	position: relative;
+}
+
+nav .redes-sociales{
+	position: absolute;
+	top: 8px;
+	left: 55px;
+	font-size: 25px;
+}
+nav .fa-facebook,.fa-twitter,.fa-google-plus,.fa-youtube-play{
+	color: white;
+	margin-right: 20px;
+}
+
+nav .fa-facebook:hover{
+	color:#3C5A99;
+}
+nav .fa-twitter:hover{
+	color: aqua;
+}
+nav .fa-google-plus:hover{
+	color: #CC4438;
+}
+nav .fa-youtube-play:hover{
+	color: #B90000;
+}
+article{
+	margin-top: -5px;
+}
+/*############################ pie de pagina #####################################*/
+
+footer{
+	margin-top: -20px;
+	width: 100%;
+	position: relative;
+	padding: 40px 100px;
+}
+footer .nav-pie{
+	background-color: #000;
+	width: 700px;
+	height: auto;
+}
+footer .nav-pie ul{
+	list-style: none;
+}
+footer .nav-pie li{
+	display: inline-block;
+	padding: 10px;
+}
+footer .nav-pie li a{
+	padding: 10px;
+	margin-left: 45px;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 13px;
+}
+footer .nav-pie li a:hover{
+	text-decoration: underline;
+	background-color: lightgrey;
+	color: black;
+}
+footer p{
+	display: block;
+	width: 750px;
+	padding: 2px;
+	color: #E1E1E1;
+}
+footer p a{
+	text-decoration: none;
+	color:white;
+	font-weight: bold;
+}
+footer p a:hover{
+	text-decoration: underline;
+}
+footer .pie-auto iframe{
+	position: absolute;
+	right: 180px;
+	top: 20px;
+	
+}
+footer .pie-data-fiscal{
+	position: absolute;
+	top: 75px;
+	right: 60px;
+	width: 80px;
+}
+/*############ nav del pie EMPRESA ###############################################*/
+#empresa{
+	/*background-color: #383737;*/
+	width: 100%;
+	height: auto;
+}
+#empresa h2{
+	display: block;
+	/*background-color: #383737;*/
+	font-size: 35px;
+	padding: 20px;
+	color: white;
+	font-family: fantasy;
+	padding-left: 100px;
+	float: left;
+}
+#empresa img{
+	width: 85%;
+	height: auto;
+	margin-left: 100px;
+}
+#empresa div p{
+	float: left;
+	width: 73.5%;
+	background-color: rgba(0,0,0,0.2);
+	padding:8px 24px;
+	color: white;
+	font-family:serif;
+}
+#empresa .cajas-empresa{
+	width: 100%;
+	height: 370px;
+	position: relative;
+}
+#empresa .cubo1{
+	position: absolute;
+	top: 115px;
+	left: 100px;
+	width: 550px;
+	height: 220px;
+	/*background-color: #878686;*/
+}
+#empresa .cubo1 iframe{
+	width: 300px;
+	height: 218px;
+	padding:10px;
+}
+#empresa .cubo1 h3{
+	position: absolute;
+	top: 15px;
+	left: 310px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+#empresa .cubo1 p{
+	position: absolute;
+	top: 45px;
+	left: 310px;
+	width: 190px;
+	padding: 0px;
+	padding: 10px;
+	color: white;
+}
+#empresa .cubo2{
+	position: absolute;
+	top: 115px;
+	left: 660px;
+	width: 262px;
+	height: 220px;
+	/*background-color: #878686;*/
+}
+#empresa .cubo2 h3{
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+}
+#empresa .cubo2 p{
+	position: absolute;
+	top: 73px;
+	left: 8px;
+	width: 230px;
+	padding: 0px;
+	padding: 8px;
+	color: white;
+}
+#empresa .cubo3{
+	position: absolute;
+	top: 115px;
+	left: 932px;
+	width: 312px;
+	height: 220px;
+	/*background-color: #878686;*/
+}
+#empresa .cubo3 h3{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+#empresa .cubo3 p{
+	position: absolute;
+	top: 50px;
+	left: 10px;
+	width: 240px;
+	padding: 0px;
+	padding: 12px;
+	color: white;
+}
+#empresa .cubo3 p a{
+	text-decoration: none;
+	color: darkgrey;
+	font-weight: bold;
+}
+#empresa .cubo3 p a:hover{
+	text-decoration: underline;
+}
+/*#########################################################################################################
+########### nav del pie CONTACTO ##########################################################################
+##########################################################################################################*/
+#contacto-lamb{
+	width: 100%;
+	height:1310px;
+	max-height: 100%;
+	overflow:hidden;
+}
+#contacto-lamb h2{
+	height: 60px;
+	padding: 15px;
+	font-size: 35px;
+	padding-left: 100px;
+	font-family: fantasy;
+	color: white;
+}
+#contacto-lamb img{
+	display: block;
+	width: 65%;
+	margin: auto;
+	margin-top: 15px;
+	padding-left: 100px;
+}
+#contacto-lamb .content-contacto{
+	width: 400px;
+	height: auto;
+	margin-top: 7px;
+	margin-left: 25%;
+	margin-right: 7px;
+	background-color: white;
+	color: grey;
+	font-family: sans-serif;
+	padding: 20px;
+	float: left;
+} 
+
+#contacto-lamb .content-contacto .titulo-contacto{
+	margin-top: 8px;
+	font-size: 20px;
+	color: grey;
+}
+#contacto-lamb .content-contacto .info-contacto{
+	padding-top: 5px;
+}
+#contacto-lamb .content-contacto img{
+	margin: 0pc;
+	padding: 0px;
+	width: 360px;
+	height: 217px;
+}
+#contacto-lamb .contacto-caja{
+	width: 370px;
+	margin-top: 7px;
+	background-color: white;
+	color: grey;
+	padding: 20px 30px 20px 30px;
+	font-family: sans-serif;
+	font-size: 13px;
+	float: left;
+}
+#contacto-lamb .contacto-caja p{
+	padding: 10px 0px;
+}
+#contacto-lamb .form-contacto{
+	width: 57.5%;
+	height: auto;
+	margin: 420px auto;
+	margin-left: 25%;
+	background-color: white;
+	color: grey;
+	padding: 30px 70px 30px 70px;
+}
+#contacto-lamb .form-contacto h3{
+	width: 80%;
+	font-size: 20px;
+	font-family: sans-serif;
+	padding-bottom: 10px;
+}
+#contacto-lamb .form-contacto p{
+	padding-bottom: 15px;
+	font-family: sans-serif;
+}
+#contacto-lamb .form-contacto {
+	font-size: 16px;
+}
+#contacto-lamb .form-contacto .ema{
+	margin-left: 80px;
+}
+#contacto-lamb .form-contacto label{
+	margin-left: 71px;
+}
+#contacto-lamb .form-contacto .error{
+	padding-left: 75px;
+	color: red;
+}
+#contacto-lamb .form-contacto .cont-campos{
+	width: 65%;
+	height: 45px;
+	margin-top: 5px;
+	padding-left: 15px;
+	border:none;
+	outline: 0px;
+	border:1px solid grey;
+	color: black;
+}
+#contacto-lamb .form-contacto textarea{
+	margin-top: 5px;
+	margin-left: 140px;
+	margin-bottom: 5px;
+	width: 65%;
+	height: 120px;
+	resize: none;
+	padding: 15px;
+	outline: 0px;
+	font-family: sans-serif;
+
+}
+#contacto-lamb .form-contacto .contacto-enviar{
+	margin-left: 140px;
+	width: 65%;
+	height: 30px;
+	background-color: #5F84F2;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+	outline: 0px;
+}
+#contacto-lamb .form-contacto .contacto-enviar:hover{
+	background-color:#195FB3;
+}
+/*#########################################################################################################
+######################################## nav del pie de newsletter #######################################
+##########################################################################################################*/
+#content-newsletter{
+	width: 100%;
+	height: 100%;
+}
+#content-newsletter h2{
+	padding: 15px;
+	padding-left: 100px;
+	font-family: fantasy;
+	color: white;
+	font-size: 35px;
+}
+#content-newsletter .newsletter{
+	background-color: #090009;
+	width: 48%;
+	height: auto;
+	margin: auto;
+	margin-top: -50px;
+	margin-bottom: 50px;
+	padding: 20px;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+#content-newsletter .newsletter h3{
+	color: white;
+	padding-bottom: 10px;
+	font-size: 32px;
+	font-family: fantasy;
+}
+#content-newsletter .newsletter p{
+	color: white;
+	margin-right: -200px;
+	padding-bottom: 12px;
+	font-size: 13px;
+}
+#content-newsletter .newsletter tr td{
+	color: white;
+	padding-bottom: 10px;
+}
+#content-newsletter .newsletter .input-newsletter{
+	border:none;
+	outline: none;
+	width: 420px;
+	height: 35px;
+	margin-left: -100px;
+	padding-left: 15px;
+}
+#content-newsletter .newsletter label,.error{
+	color: red;
+	padding-left: -100px;
+}
+#content-newsletter .newsletter .scroll{
+	width: 600px;
+	height: 150px;
+	overflow: auto;
+	background-color: #000;
+	padding: 10px;
+	margin-right: -400px;
+	font-size: 12px;
+}
+#content-newsletter .newsletter .acuerdo-news{
+	width: 20px;
+	height: 20px;
+	margin-left: 0px;
+}
+#content-newsletter .newsletter .news-parrafo{
+	width: 500px;
+	margin-left: -250px;
+	padding-top: 10px;
+}
+#content-newsletter .newsletter .boton-news{
+	width: 170px;
+	height: 25px;
+	margin-right: -320px;
+	padding-right: 100px;
+	padding-bottom: 20px;
+	float: right;
+	font-weight: bold;
+	background-color: #150015;
+	color: white;
+	border: 2px solid white;
+	cursor: pointer;
+	transition: 2s;
+}
+#content-newsletter .newsletter .boton-news:hover{
+	background-color: black;
+}
+/*############ navegacion principal Autos nuevos ###############################*/
+.autos-nuevos{
+	width: 100%;
+	height: 1580px;
+	margin-bottom: 20px;
+	background-color: rgba(0,0,0,0.1);
+}
+.autos-nuevos .guia-nav{
+	background-color: rgba(0,0,0,0.1);
+	padding:5px;
+	padding-top: 8px;
+	padding-left: 50px;
+	font-family: sans-serif;
+	font-size: 15px;
+}
+.autos-nuevos .guia-nav a{
+	text-decoration: none;
+	color: aqua;
+}
+.autos-nuevos .guia-nav a:hover{
+	color:white; 
+}
+.autos-nuevos .guia-nav span{
+	color: white;
+}
+.autos-nuevos .img-titulo{
+	background-color: #000;
+}
+.autos-nuevos .img-titulo h1{
+	font-family:sans-serif;
+	font-weight: normal;
+	font-size: 30px;
+	padding: 8px;
+	padding-left: 50px;
+	color: white;
+}
+.autos-nuevos .img-titulo p{
+	padding-left: 50px;
+	padding-bottom: 10px;
+	font-size: 20px;
+	color: white;
+}
+.autos-nuevos #sliderpeque p{
+	color: white;
+}
+.catalogo-autos{
+	margin:auto;
+	width: 960px;
+	height: auto;
+}
+.catalogo-autos h1{
+	padding-top: 50px;
+	text-align: center;
+}
+.catalogo-autos a{
+	text-decoration: none;
+	font-size: 30px;
+	color: #423D3D;
+}
+.catalogo-autos a:hover{
+	text-decoration: underline;
+}
+.catalogo-autos p{
+	text-align: center;
+	padding: 15px;
+	padding-bottom: 22px;
+	font-size: 20px;
+	color: white;
+}
+/*######################################################################################################
+################################### catalogo de imagenes de autos nuevos ##############################
+########################################################################################################*/
+.autos-nuevos.logo-img-autos{
+	width: 100%;
+	height: auto;
+}
+.autos-nuevos .logo-img-autos .fila-cat {
+	width: 150px;
+	height: 150px;
+	margin-bottom: 15px;
+	background-color: white;
+}
+.autos-nuevos .logo-img-autos .fila-cat:hover {
+	box-shadow: 0px 0px 8px 4px white;
+}
+.autos-nuevos .logo-img-autos .fila-cat img{
+	width: 90px;
+	height: auto;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+.autos-nuevos .logo-img-autos .fila-cat p{
+	font-size: 18px;
+	color: black;
+}
+.autos-nuevos .logo-img-autos a:hover{
+	text-decoration: none;
+}
+
+/*########### clasificados de autos nuevos ###########################*/
+.clasificados{
+	margin-top: 380px;
+	width: 100%;
+	position: relative;
+}
+.clasificados h1{
+	text-align: center;
+	font-size: 30px;
+	color: #383838;
+}
+.clasificados p{
+	text-align: center;
+	font-size: 20px;
+	color: white;
+}
+.clasificados .cuerpo-img{
+	width: 610px;
+	height: 310px;
+	position: absolute;
+	top: 80px;
+	left: 60px;
+	background-color: white;
+}
+.clasificados .cuerpo-img:hover{
+	box-shadow: 0px 0px 8px 5px white;
+}
+.clasificados .cuerpo-img img{
+	width: 380px;
+	height: 310px;
+}
+.clasificados .cuerpo-img .cuerpo-texto{
+	width: 200px;
+	height: 310px;
+	position: relative;
+}
+.clasificados .cuerpo-img .cuerpo-texto h3{
+	position: absolute;
+	top: -300px;
+	left: 400px;
+	font-size: 30px;
+	color: #696767;
+}
+.clasificados .cuerpo-img .cuerpo-texto .anticipo{
+	position: absolute;
+	top: -80px;
+	left: 400px;
+	color: #757474;
+}
+.clasificados .cuerpo-img .cuerpo-texto .precio{
+	position: absolute;
+	top: -60px;
+	left: 400px;
+	color: #49A1D3;
+	font-size: 25px;
+}
+/*######## campos pequeños de clasificados ##################################*/
+.clasificados .cuerpo-pequeño{
+	width: 300px;
+	height: 150px;
+	position: relative;
+	background-color: white;
+	font-family: sans-serif;
+}
+.clasificados .cuerpo-pequeño:hover{
+	box-shadow: 0px 0px 8px 5px white;
+}
+.clasificados .cuerpo-pequeño img{
+	width: 190px;
+	height: 150px;
+}
+.clasificados .cuerpo-pequeño .cuerpo-texto{
+	width: 110px;
+	height: 150px;
+	position: absolute;
+	top: 10px;
+	left: 200px;
+}
+.clasificados .cuerpo-pequeño .cuerpo-texto h3{
+	width: 90px;
+	font-size: 15px;
+	font-weight: normal;
+	color: #757474;
+}
+.clasificados .cuerpo-pequeño .cuerpo-texto .anticipo{
+	position: absolute;
+	top: 90px;
+	left: 0px;
+	font-size: 15px;
+	color: #757474;
+}
+.clasificados .cuerpo-pequeño .cuerpo-texto .precio{
+	position: absolute;
+	top: 110px;
+	left: 0px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #49A1D3;
+}
+
+/*########## categorias de autos nuevos /listado de autos -letras alfabeticas #####*/
+.categorias-autos-nuevos{
+	width: 100%;
+	height: 1000px;
+	margin-bottom: 20px;
+	background-color: rgba(0,0,0,0.1);
+}
+.categorias-autos-nuevos .guia-nav{
+	background-color: rgba(0,0,0,0.1);
+	padding:5px;
+	padding-top: 8px;
+	padding-left: 50px;
+	font-family: sans-serif;
+	font-size: 15px;
+}
+.categorias-autos-nuevos .guia-nav a{
+	text-decoration: none;
+	color: aqua;
+}
+.categorias-autos-nuevos .guia-nav a:hover{
+	color:white; 
+}
+.categorias-autos-nuevos .guia-nav span{
+	color:white;
+}
+.categorias-autos-nuevos .img-titulo{
+	background-color: #000;
+}
+.categorias-autos-nuevos .img-titulo h1{
+	font-family:sans-serif;
+	font-weight: normal;
+	font-size: 30px;
+	padding: 8px;
+	padding-left: 50px;
+	color: white;
+}
+.categorias-autos-nuevos .img-titulo p{
+	padding-left: 50px;
+	padding-bottom: 10px;
+	font-size: 20px;
+	color: white;
+}
+.categorias-autos-nuevos .cat-autos-nuevos h1{
+	text-align: center;
+	font-size: 30px;
+	color: #4D4B4B;
+	font-family:sans-serif;
+	font-weight: normal;
+	margin-top: 35px;
+}
+.categorias-autos-nuevos .cat-autos-nuevos ul{
+	display: block;
+	width: 1235px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 50px;
+	list-style: none;
+}
+.categorias-autos-nuevos .cat-autos-nuevos ul li{
+	display: block;
+	width: 280px;
+	height: 150px;
+	position: relative;
+}
+.categorias-autos-nuevos .cat-autos-nuevos ul li .letra{
+	display: block;
+	width: 48px;
+	height: 48px;
+	font-size: 30px;
+	color:#5F5C5C;
+	background-color: white;
+	text-align: center;
+	padding-top: 6px;
+}
+.categorias-autos-nuevos .cat-autos-nuevos ul li ul{
+	margin-top: -57px;
+	display: block;
+	width: 200px;
+	height: 150px;
+	position: relative;
+}
+.categorias-autos-nuevos .cat-autos-nuevos ul li ul .palabrasuno{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.categorias-autos-nuevos .cat-autos-nuevos ul li ul .palabrasdos{
+	position: absolute;
+	top: 30px;
+	left: 10px;
+}
+.categorias-autos-nuevos .cat-autos-nuevos ul li ul .palabrastres{
+	position: absolute;
+	left: 10px;
+	bottom: -50px;
+}
+.categorias-autos-nuevos .cat-autos-nuevos ul li ul .palabrascuatro{
+	position: absolute;
+	top: 70px;
+	left: 10px;
+}
+.categorias-autos-nuevos .cat-autos-nuevos ul li ul .palabrascinco{
+	position: absolute;
+	top: 90px;
+	left: 10px;
+}
+.categorias-autos-nuevos .cat-autos-nuevos ul li ul .palabrasseis{
+	position: absolute;
+	top: 110px;
+	left: 10px;
+}
+.categorias-autos-nuevos .cat-autos-nuevos ul li ul .palabrassiete{
+	position: absolute;
+	top: 130px;
+	left: 10px;
+}
+.categorias-autos-nuevos .cat-autos-nuevos ul li ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+.categorias-autos-nuevos .cat-autos-nuevos ul li ul li a:hover{
+	color: black;
+}
+
+/*########### muestreo autos seleccionado de las categorias ######################*/
+.muestreo-autos{
+	width: 100%;
+	height: 100%;
+	background-color: #E4E4E9;
+}
+.muestreo-autos .guia-nav{
+	background-color: #024756;
+	padding:5px;
+	padding-top: 8px;
+	padding-left: 50px;
+	font-family: sans-serif;
+	font-size: 15px;
+}
+.muestreo-autos .guia-nav a{
+	text-decoration: none;
+	color: aqua;
+}
+.muestreo-autos .guia-nav a:hover{
+	color:white; 
+}
+.muestreo-autos .guia-nav span{
+	color: white;
+}
+.muestreo-autos .caja-nuevos{
+	margin:auto;
+	width:95%;
+}
+.muestreo-autos .caja-nuevos .contenido-auto{
+	margin-top: 35px;
+	margin-left: 15px;
+	width: 300px;
+	height: 360px;
+	float: left;
+	background-color: white;
+}
+.muestreo-autos .caja-nuevos .contenido-auto img{
+	width: 300px;
+	height: 225px;
+}
+.muestreo-autos .caja-nuevos .contenido-auto h3{
+	padding-top: 15px;
+	padding-left: 10px;
+	font-size: 25px;
+	color: #595959;
+	font-family: arial;
+}
+.muestreo-autos .caja-nuevos .contenido-auto p{
+	padding-top: 5px;
+	padding-left: 10px;
+	font-size: 15px;
+	color: darkgrey;
+	font-family: sans-serif;
+}
+.muestreo-autos .caja-nuevos .contenido-auto b{
+	color: #0668B5;
+	font-size: 21px;
+}
+.muestreo-autos .caja-nuevos .contenido-auto span{
+	margin-top: 20px;
+	margin-left: 10px;
+	display: block;
+	width: 270px;
+	height: 28px;
+	background-color: #EEEEEE;
+	font-size: 14px;
+	padding: 5px 0px 5px 10px;
+	font-family: sans-serif;
+	color: grey;
+}
+.muestreo-autos .caja-nuevos .contenido-auto span strong{
+	color: black;
+	font-weight: normal;
+}
+.muestreo-autos .caja-nuevos .contenido-auto:hover{
+	box-shadow: 0px 0px 6px 3px white;
+}
+/*######## muestreo de los autos seleccionados ####################################*/
+.muestreo-autos .caja-nuevos .vistazo{
+	margin: auto;
+	margin-top: 35px;
+	width: 95%;
+	height: 100%;
+	overflow: hidden;
+	background-color: white;
+	font-family: sans-serif;
+}
+.muestreo-autos .caja-nuevos .vistazo .vista-slider{
+	float: left;
+}
+.muestreo-autos .caja-nuevos .vistazo h4{
+	padding-top: 30px;
+	padding-left: 730px;
+	font-size: 20px;
+	font-weight: normal;
+}
+.muestreo-autos .caja-nuevos .vistazo h3{
+	padding-top: 4px;
+	padding-left: 730px;
+	font-size: 30px;
+	font-weight: normal;
+	color: #424343;
+}
+.muestreo-autos .caja-nuevos .vistazo p{
+	padding-top: 20px;
+	padding-left: 730px;
+	font-size: 15px;
+}
+.muestreo-autos .caja-nuevos .vistazo p b{
+	font-size: 35px;
+	color: #0668B3;
+}
+.muestreo-autos .caja-nuevos .vistazo span{
+	display: block;
+	padding-top: 10px;
+	padding-left: 730px;
+	font-size: 15px;
+	padding-bottom: 5px;
+}
+.muestreo-autos .caja-nuevos .vistazo span strong{
+	color: #414141;
+	font-weight: bold;
+}
+.muestreo-autos .caja-nuevos .vistazo .descripcion-autos{
+	padding-left: 730px;
+	font-size: 1em;
+	font-weight: bold;
+	color: #424343;
+}
+/*######### formulario de la concesionaria de autos nuevos #####################*/
+.muestreo-autos .caja-nuevos .vistazo form{
+	display: block;
+	margin-top: 44.1px;
+	margin-right: 10px;
+	margin-bottom: 27px;
+	width: 500px;
+	height: 100%;
+	float: right;
+	background-color: #C8EDF2;
+	transition: all 4s ease;
+	border: 1px solid black;
+}
+.muestreo-autos .caja-nuevos .vistazo form:hover{
+	background-color: #DDDDDD;
+	transition: all 3s ease;
+}
+.muestreo-autos .caja-nuevos .vistazo form .header-form{
+	width: 100%;
+	height: 80px;
+	background-color: #023941;
+}
+.muestreo-autos .caja-nuevos .vistazo form .header-form h2{
+	color: white;
+	padding: 18px 0px 0px 20px;
+	font-size: 20px;
+	font-weight: normal;
+}
+.muestreo-autos .caja-nuevos .vistazo form .header-form p{
+	color: white;
+	padding: 3px 0px 0px 20px;
+	font-size: 13px;
+}
+.muestreo-autos .caja-nuevos .vistazo form #form-concesionaria{
+	width: 100%;
+	height: auto;
+}
+.muestreo-autos .caja-nuevos .vistazo form #form-concesionaria td{
+	padding: 15px 0px 0px 20px;
+	font-size: 16px;
+}	
+.muestreo-autos .caja-nuevos .vistazo form #form-concesionaria input{
+	width: 350px;
+	height: 30px;
+	padding-left: 15px;
+	font-family: sans-serif;
+	font-size: 15px;
+	border: none;
+	border-bottom: 3px solid #06ACC4;
+}
+.muestreo-autos .caja-nuevos .vistazo form #form-concesionaria select{
+	width: 350px;
+	height: 30px;
+	border: none;
+	border-bottom: 3px solid #06ACC4;
+	padding-left: 20px;
+    margin-bottom: 4px;
+}
+.muestreo-autos .caja-nuevos .vistazo form #form-concesionaria textarea{
+    margin-top: 4px;
+	width: 350px;
+	max-width: 350px;
+	height: 80px;
+	max-height: 80px;
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 15px;
+	font-family: sans-serif;
+	border: none;
+	border-bottom: 3px solid #06ACC4;
+}	
+.muestreo-autos .caja-nuevos .vistazo form #form-concesionaria input[type="submit"] {
+	margin-left: 115px;
+	height: 40px;
+	background-color: #06ACC4;
+	color: white;
+	font-weight: bold;
+	border:none;
+	transition: 2s;
+}
+.muestreo-autos .caja-nuevos .vistazo form #form-concesionaria input[type="submit"]:hover {
+	background-color: #023941;
+	border-bottom: none;
+	transition: 2s;
+	cursor: pointer;
+}
+.muestreo-autos .caja-nuevos .vistazo form .form-pie{
+	width: 100%;
+	height: 80px;
+	background-color: #023941;
+	margin-top: 31px;
+}
+.muestreo-autos .caja-nuevos .vistazo form .form-pie p{
+	color: white;
+	text-align: center;
+	padding: 18px 0px 0px 0px;
+	font-size: 13px;
+}
+.muestreo-autos .caja-nuevos .vistazo form .form-pie h1{
+	color: white;
+	padding: 0px 0px 0px 0px;
+	font-size: 25px;
+	font-weight: normal;
+	text-align: center;
+}
+.muestreo-autos .caja-nuevos .vistazo form label.error{
+	width: 350px;
+    border: 1.5px solid red;
+    padding: 5px;
+	background-color: #ffecec;
+	color: red;
+    display: block; 
+    margin-top: -4px;
+    margin-bottom: -13px;
+}
+
+.muestreo-autos .caja-nuevos .vistazo form .g-recaptcha{
+	margin-right: -400px;
+	padding-left: 115px;
+}
+/*#### coches similares de cada auto elejido #################################*/
+.muestreo-autos .caja-nuevos .vistazo .title-otros{
+    width: 690px;
+    height: 50px;
+	color: white;
+	background-color: #113045;
+	font-size: 23px;
+	font-weight: normal;
+	text-align: center;
+	position: absolute;
+	top: 668px;
+	left: 65px;
+	padding-top: 8px;
+}
+.muestreo-autos .caja-nuevos .vistazo #otros-modelos{
+	padding-bottom: 365px;
+	width: 690px;
+	height:830px;
+	position: relative;
+	top: 70px;
+}
+.muestreo-autos .caja-nuevos .vistazo #otros-modelos .similares{
+	width: 220px;
+	height: 90px;
+	margin-bottom: 10px;
+	background-color: aliceblue;
+	margin-right: 7px;
+	float: right;
+	position: relative;
+}
+.muestreo-autos .caja-nuevos .vistazo #otros-modelos .similares:hover{
+	box-shadow: 0px 0px 6px 4px  #113045;
+}
+.muestreo-autos .caja-nuevos .vistazo #otros-modelos a{
+	color: #303030;
+}
+.muestreo-autos .caja-nuevos .vistazo #otros-modelos .similares img{
+	width: 150px;
+	height: 90px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.muestreo-autos .caja-nuevos .vistazo #otros-modelos .similares h4{
+	position: absolute;
+	top: -22px;
+	right: 2px;
+	font-size: 15px;
+    color: black;
+}
+
+/*#### fondo del panel de autos nuevos de color gris #############################*/
+#panel-nuevos{
+	width: 100%;
+	min-height: 650px;
+	max-height: 100%;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+/*estilos del contador de autos*/
+#panel-nuevos .contador{
+	color: white;
+	margin: -13px 50px 10px 50px;
+	border-bottom: 2px solid white;
+}
+#panel-nuevos .contador p b{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*#### menu del atajo de navegacion mediante links ####################################*/
+.main-atajo{
+	margin-bottom: 20px;
+	padding-left: 50px;
+	padding-top: 7px;
+	padding-bottom: 3px;
+	background-color: #024756;
+}
+.main-atajo a{
+	width: 100%;
+	text-decoration: none;
+	color: aqua;
+	font-family: sans-serif;
+	font-size: 15px;
+}
+.main-atajo a:hover{
+	color: white;
+}
+.main-atajo span{
+	color: white;
+}
+/*################################################################################*/
+
+.body-muestreo{
+	width: 95%;
+	margin: auto;
+}
+.body-muestreo .cars-view{
+	margin-left: 15px;
+	margin-bottom: 20px;
+	width: 300px;
+	height: 360px;
+	float: left;
+	background-color: white;
+}
+.body-muestreo .cars-view img{
+	width: 300px;
+	height: 225px;
+}
+.body-muestreo .cars-view h3{
+	padding-top: 15px;
+	padding-left: 10px;
+	font-size: 25px;
+	color: #595959;
+	font-family: arial;
+}
+.body-muestreo .cars-view p{
+	padding-top: 5px;
+	padding-left: 10px;
+	font-size: 15px;
+	color: darkgrey;
+	font-family: sans-serif;
+}
+.body-muestreo .cars-view b{
+    color: #0668B5;
+	font-size: 21px;
+}
+.body-muestreo .cars-view span{
+	margin-top: 20px;
+	margin-left: 10px;
+	display: block;
+	width: 270px;
+	height: 28px;
+	background-color: #EEEEEE;
+	font-size: 14px;
+	padding: 5px 0px 5px 10px;
+	font-family: sans-serif;
+	color: grey;
+}
+.body-muestreo .cars-view span strong{
+	color: black;
+	font-weight: normal;
+}
+.body-muestreo .cars-view:hover{
+	box-shadow: 0px 0px 8px 5px white;
+}
+
+/*###################################################################################
+############################## style de autos usados ################################
+#####################################################################################*/
+
+.body-muestreo-old{
+	width: 95%;
+	margin: auto;
+}
+.body-muestreo-old .cars-view-old{
+	margin-left: 15px;
+	margin-bottom: 20px;
+	width: 300px;
+	height: 315px;
+	float: left;
+	background-color: white;
+	position: relative;
+}
+.body-muestreo-old .cars-view-old img{
+	width: 300px;
+	height: 200px;
+}
+.body-muestreo-old .cars-view-old h3{
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 18px;
+	font-weight: normal;
+	color: #595959;
+	font-family: arial;
+}
+.body-muestreo-old .cars-view-old p{
+	font-size: 17px;
+	font-weight: bold;
+	color: black;
+	font-family: sans-serif;
+	position: absolute;
+	right: 20px;
+	bottom: 30px;
+}
+.body-muestreo-old .cars-view-old b{
+    color: #0668B5;
+	font-size: 25px;
+	position: absolute;
+	left: 10px;
+	bottom: 30px;
+}
+.body-muestreo-old .cars-view-old span{
+	margin-bottom: -20px;
+	margin-left: 10px;
+	font-size: 12px;
+	font-family: sans-serif;
+	color: grey;
+	position: absolute;
+	left: 0px;
+	bottom: 30px;
+}
+.body-muestreo-old .cars-view-old:hover{
+	box-shadow: 0px 0px 8px 5px white;
+}
+
+/*#####################################################################################
+################## muestreo de autos usados seleccionados #############################
+#####################################################################################*/
+
+.muestreo-autos-old{
+	width: 100%;
+	min-height: 500px;
+	max-height: 100%;
+	overflow: hidden;
+	background-color: #E4E4E9;
+}
+.muestreo-autos-old .guia-nav{
+	background-color: #024756;
+	padding:5px;
+	padding-top: 8px;
+	padding-left: 50px;
+	font-family: sans-serif;
+	font-size: 15px;
+}
+.muestreo-autos-old .guia-nav a{
+	text-decoration: none;
+	color: aqua;
+}
+.muestreo-autos-old .guia-nav a:hover{
+	color:white; 
+}
+.muestreo-autos-old .guia-nav span{
+	color: white;
+}
+
+/*######## desde aqui empiezan los estilos del auto seleccionado #################*/
+.muestreo-autos-old .caja-nuevos{
+	margin:auto;
+	width:95%;
+}
+
+/*######## muestreo de los autos seleccionados ####################################*/
+.muestreo-autos-old .caja-nuevos .vistazo{
+	margin: auto;
+	margin-top: 35px;
+	width: 95%;
+	height: 100%;
+	overflow: hidden;
+	padding-bottom: 20px;
+	background-color: white;
+	font-family: sans-serif;
+	position: relative;
+}
+.muestreo-autos-old .caja-nuevos .vistazo .vista-slider{
+	float: left;
+}
+.muestreo-autos-old .caja-nuevos .vistazo h3{
+	padding-top: 30px;
+	padding-left: 730px;
+	font-size: 27px;
+	font-weight: normal;
+	color: #595959;
+}
+.muestreo-autos-old .caja-nuevos .vistazo h4{
+	padding-top: 4px;
+	padding-left: 730px;
+	font-size: 19px;
+	font-weight: bold;
+	color: black;
+}
+.muestreo-autos-old .caja-nuevos .vistazo p{
+	padding-top: 0px;
+	padding-left: 730px;
+	font-size: 17px;
+	color: #7C7B7B;
+}
+.muestreo-autos-old .caja-nuevos .vistazo h2{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 730px;
+	font-size: 27px;
+	color: #0668B3;
+}
+/*####### descripcion del coche ###############################################*/
+.muestreo-autos-old .caja-nuevos .vistazo .info-descripcion{
+	width: 680px;
+	height: auto;
+	position: relative;
+}
+.muestreo-autos-old .caja-nuevos .vistazo .info-descripcion .titulo{
+	width: 680px;
+	height: auto;
+	font-size: 24px;
+	font-weight: normal;
+	color: #565656;
+	border-bottom: 2px solid #4C4C4C;
+	padding-bottom: none;
+	margin-top: 330px;
+	margin-left: 10px;
+}
+.muestreo-autos-old .caja-nuevos .vistazo .info-descripcion .info{
+	width: 680px;
+	height: auto;
+	padding-top: 16px;
+	padding-left: 26px;
+	padding-bottom: 16px;
+	width: 680px;
+	color: #403E3E;
+	font-size: 16px;
+}
+/*########### ficha tecnica y equipamiento del coche ###############################*/
+.muestreo-autos-old .caja-nuevos .vistazo .info-ficha-tecnica{
+	width: 680px;
+	height: auto;
+	position: relative;
+}
+.muestreo-autos-old .caja-nuevos .vistazo .info-ficha-tecnica .titulo{
+	width: 680px;
+	height: auto;
+	font-size: 24px;
+	font-weight: normal;
+	color: #565656;
+	border-bottom: 2px solid #4C4C4C;
+	padding-bottom: none;
+	padding-top: 0px;
+	margin-left: 10px;
+}
+.muestreo-autos-old .caja-nuevos .vistazo .info-ficha-tecnica .info{
+	width: 680px;
+	height: auto;
+	padding-top: 16px;
+	padding-left: 26px;
+	padding-bottom: 16px;
+	color: #403E3E;
+	font-size: 16px;
+}
+/*####### iconos de informacion tecnica del coche ###################################*/
+.muestreo-autos-old .caja-nuevos .vistazo .iconos-tecnicos{
+	width: 500px;
+	position: absolute;
+	top: 180px;
+	right: 10px;
+}
+.muestreo-autos-old .caja-nuevos .vistazo .iconos-tecnicos a{
+	margin-right: 40px;
+	background-color: rgba(0,0,0,0.1);
+	padding: 7px;
+	color:#545353;
+	text-decoration: none;
+}
+.muestreo-autos-old .caja-nuevos .vistazo .iconos-tecnicos a:hover{
+	background-color: #386F93;
+	border: 1px solid #023941;
+	padding: 6px;
+	color: white;
+}
+.muestreo-autos-old .caja-nuevos .vistazo .iconos-tecnicos img{
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+	margin-bottom: -10px;
+}
+/*######### formulario de la concesionaria de autos nuevos #####################*/
+.muestreo-autos-old .caja-nuevos .vistazo form{
+	display: block;
+	margin-top: 60px;
+	margin-right: 10px;
+	margin-bottom: 6.1px;
+	width: 500px;
+	height: auto;
+	float: right;
+	background-color: #C8EDF2;
+	transition: all 2s ease;
+	border: 1px solid #023941;
+}
+.muestreo-autos-old .caja-nuevos .vistazo form:hover{
+	background-color: #DDDDDD;
+	transition: all 3s ease;
+}
+.muestreo-autos-old .caja-nuevos .vistazo form .header-form{
+	width: 100%;
+	height: 80px;
+	background-color: #023941;
+}
+.muestreo-autos-old .caja-nuevos .vistazo form .header-form h2{
+	color: white;
+	padding: 18px 0px 0px 20px;
+	font-size: 20px;
+	font-weight: normal;
+}
+.muestreo-autos-old .caja-nuevos .vistazo form .header-form p{
+	color: white;
+	padding: 3px 0px 0px 20px;
+	font-size: 13px;
+}
+.muestreo-autos-old .caja-nuevos .vistazo form #form-concesionaria{
+	width: 100%;
+	height: auto;
+}
+.muestreo-autos-old .caja-nuevos .vistazo form #form-concesionaria td{
+	padding: 15px 0px 0px 20px;
+	font-size: 16px;
+}	
+.muestreo-autos-old .caja-nuevos .vistazo form #form-concesionaria input{
+	width: 350px;
+	height: 30px;
+	padding-left: 15px;
+	font-family: sans-serif;
+	font-size: 15px;
+	border: none;
+	border-bottom: 3px solid #06ACC4;
+}
+.muestreo-autos-old .caja-nuevos .vistazo form #form-concesionaria select{
+	width: 350px;
+	height: 30px;
+	border: none;
+	border-bottom: 3px solid #06ACC4;
+	padding-left: 20px;
+    margin-bottom: 4px;
+}
+.muestreo-autos-old .caja-nuevos .vistazo form #form-concesionaria textarea{
+	width: 350px;
+	max-width: 350px;
+	height: 80px;
+	max-height: 80px;
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 15px;
+	font-family: sans-serif;
+	border: none;
+	border-bottom: 3px solid #06ACC4;
+}	
+.muestreo-autos-old .caja-nuevos .vistazo form #form-concesionaria input[type="submit"] {
+	margin-left: 115px;
+	height: 40px;
+	background-color: #06ACC4;
+	color: white;
+	font-weight: bold;
+	border:none;
+	transition: 2s;
+	z-index: 2000;
+}
+.muestreo-autos-old .caja-nuevos .vistazo form #form-concesionaria input[type="submit"]:hover {
+	background-color: #023941;
+	border-bottom: none;
+	transition: 2s;
+	cursor: pointer;
+	z-index: 2000;
+}
+.muestreo-autos-old .caja-nuevos .vistazo form .form-pie{
+	width: 100%;
+	height: 80px;
+	background-color: #023941;
+	margin-top: 31px;
+}
+.muestreo-autos-old .caja-nuevos .vistazo form .form-pie p{
+	color: white;
+	text-align: center;
+	padding: 18px 0px 0px 0px;
+	font-size: 13px;
+}
+.muestreo-autos-old .caja-nuevos .vistazo form .form-pie h1{
+	color: white;
+	padding: 0px 0px 0px 0px;
+	font-size: 25px;
+	font-weight: normal;
+	text-align: center;
+}
+.muestreo-autos-old .caja-nuevos .vistazo form label.error{
+    width: 350px;
+    border: 1.5px solid red;
+    padding: 5px;
+	background-color: #ffecec;
+	color: red;
+    display: block; 
+    margin-top: -4px;
+    margin-bottom: -13px;			
+}
+#recaptcha{
+	margin-right: -500px;
+	padding-left: 114px;
+}
+
+/*####################################################################################
+########### style de motos ###########################################################
+####################################################################################*/
+.body-muestreo-motos{
+	width: 95%;
+	margin: auto;
+}
+.body-muestreo-motos .motos-view{
+	margin-left: 15px;
+	margin-bottom: 20px;
+	width: 220px;
+	height: 280px;
+	float: left;
+	background-color: white;
+	position: relative;
+}
+.body-muestreo-motos .motos-view img{
+	width: 220px;
+	height: 164px;
+}
+.body-muestreo-motos .motos-view h3{
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #595959;
+	font-family: arial;
+}
+.body-muestreo-motos .motos-view p{
+	font-size: 12px;
+	font-weight: bold;
+	color: grey;
+	font-family: sans-serif;
+	position: absolute;
+	left: 10px;
+	bottom: 25px;
+}
+.body-muestreo-motos .motos-view b{
+    color: #0668B5;
+	font-size: 16px;
+	font-family: arial;
+	position: absolute;
+	left: 10px;
+	bottom: 45px;
+}
+.body-muestreo-motos .motos-view:hover{
+	box-shadow: 0px 0px 8px 5px white;
+}
+/*###### lista de marcas ##########################################################*/
+#panel-nuevos .contador-motos{
+	width: 924px;
+	margin-top: -15px;
+	margin-left: 285px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid white;
+}
+#panel-nuevos .contador-motos p{
+	color: white;
+	font-size: 16px;
+}
+#panel-nuevos .contador-motos p b{
+	font-size: 21px;
+	color: white;
+}
+#contenedor-items{
+	width: 200px;
+	height: 100%;
+	position: absolute;	
+}
+#items-marca{
+	width: 200px;
+	background-color: white;
+	float: left;
+	margin-left: 50px;
+	margin-right: 20px;
+	margin-bottom: 15px;
+}
+#items-marca h3{
+	margin: 8px 0px 6px 50px;
+	font-family: Arial;
+	font-size: 16px;
+	cursor: pointer;
+}
+#items-marca h3:hover{
+	text-decoration: underline;
+	color: #134175;
+}
+#items-marca span{
+	display:inline-flex;
+	width: 200px;
+}
+#items-marca span a{
+	margin: 15px 0px 0px 50px;
+	text-decoration: none;
+	color: black;
+}
+#items-marca span a:hover{
+	color: #073E6D;
+}
+#items-marca span a:hover::before{
+	margin-left: -12px;
+	content: "« ";
+}
+#items-marca span a:hover::after{
+	content: " »";
+}
+#items-marca span .ultima-palabra{
+	margin-top: 12px;
+	margin-bottom: 15px;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: Arial;
+}
+#items-marca span .ultima-palabra:hover{
+	color: #134175;
+	text-decoration: underline;
+}
+#bgventana{
+	position: fixed;
+	background-color: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+	visibility: hidden;
+}
+#content-ventana{
+	background-color: white;
+	border-radius: 9px;
+	width: 700px;
+	height: 500px;
+	position: absolute;
+	top:100px;
+	left: 350px;
+	overflow: auto;
+}
+#ventana{
+	background-color: white;
+	width: 540px;
+	height: 320px;
+	position: absolute;
+	top:80px;
+	left: 50px;
+	overflow: auto;
+}
+#content-ventana .fa-times-circle{
+	float: right;
+	margin: 10px 20px 0px 0px;
+	font-size: 25px;
+	color: black;
+}
+#content-ventana .ventana-marca{
+	cursor: text;
+	margin: 30px 0px 5px 100px;
+	font-size: 25px;
+	position: fixed;
+}
+#content-ventana .ventana-marca:hover{
+	text-decoration: none;
+	color: black;
+}
+
+#desplegar-condicion{
+	display: none;
+}
+#desplegar-condicion span a{
+	margin: 0px 0px 10px 50px;
+	text-decoration: none;
+	color: black;
+}
+#posicion-motos{
+	margin-left: 241px;
+	width: 1140px;
+	height: 100%;
+	position: relative;
+}
+
+/*##############################################################################
+############ muestreo de motos, estilos del id= a "motos-pro" ##################
+##############################################################################*/
+#motos-pro{
+	margin-left: 10px;
+	padding: 10px;
+	width: 680px;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	background-color: #1F7989;
+	border-radius: 6px;
+}
+#motos-pro .publicado{
+	display: inline-block;
+	width: 660px;
+	padding-bottom: 4px;
+	border-bottom: 2px solid;
+	color: white;
+	font-size: 12px;
+}
+#motos-pro li{
+	width: 330px;
+	height: 20px;
+	float: left;
+	padding: 10px 0px 15px 0px;
+	font-weight: bold;
+	color: white;
+}
+#motos-pro li span{
+	font-weight: normal;
+}
+#consejo-seguridad{
+	width: 680px;
+	background-color: #1F7989;
+	overflow: hidden;
+	margin: 10px 10px 20px 10px;
+	padding: 10px;
+	border-radius: 6px;
+	position: relative;
+}
+#consejo-seguridad span{
+	display: inline-block;
+	width: 660px;
+	border-bottom: 2px solid;
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+}
+#consejo-seguridad li{
+	margin:8px 20px 10px 10px;
+	width: 300px;
+	height: 40px;
+	font-size: 13px;
+	float: left;
+	color: white;
+	list-style: disc;
+}
+#consejo-seguridad .text-seguridad{
+	font-size: 13px;
+	border-bottom: none;
+	margin-left: 400px;
+}
+#consejo-seguridad .text-seguridad button{
+	cursor: pointer;
+	border: none;
+	background-color: #1F7989;
+	font-weight: bold;
+	
+}
+#consejo-seguridad .text-seguridad button:hover{
+	text-decoration: underline;
+}
+
+/*##############################################################################
+########## estilos del formulario de la denuncia de motos ######################
+##############################################################################*/
+#bg-seguridad{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	z-index:300;
+	visibility: hidden;
+}
+#bg-seguridad .form-seguridad{
+	margin:150px auto;
+	display: block;
+	width: 600px;
+	height: 400px;
+	background-color: white;
+	border-radius: 8px;
+	z-index: 400;
+}
+#bg-seguridad .form-seguridad .fa-times-circle{
+	font-size: 30px;
+	color: black; 
+	float: right;
+	margin:10px 10px 0px 0px;
+}
+#bg-seguridad .form-seguridad .titulo-seg{
+	margin: 0px;
+	padding: 0px;
+	padding-top: 40px;
+	margin-left: 70px;
+	width: 600px;
+	color: grey;
+	font-size: 30px;
+	font-family: sans-serif;
+}
+#bg-seguridad .form-seguridad fieldset{
+	margin-left: 70px;
+	border: none;
+	width: 450px;
+	height: auto;
+}
+#bg-seguridad .form-seguridad fieldset legend{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: grey;
+}
+#bg-seguridad .form-seguridad .form-seg{
+	margin: 0px;
+	padding: 0px;
+	background-color: unset;
+	border: none;
+}
+#bg-seguridad .form-seguridad .form-seg label{
+	width: 100%;
+	margin-bottom: 20px;
+	color: #565454;
+	font-size: 14px;
+	position: relative;
+	left: -164px;
+}
+#bg-seguridad .form-seguridad .form-seg .fila-letras{
+	display: inline-block;
+	width: 320px;
+	position: relative;
+	top: -20px;
+	left: 200px;
+}
+#bg-seguridad .form-seguridad .form-seg .btn-denunciar{
+	width: 120px;
+	margin: 40px 10px 0px 135px;
+	padding: 12px;
+	color: white;
+	background-color: #CF201D;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: bold;
+}
+#bg-seguridad .form-seguridad .form-seg .btn-denunciar:hover{
+	background-color: #531212;
+}
+#bg-seguridad .form-seguridad .form-seg a{
+	padding: 12px;
+	color: #595757;
+}
+
+/*####################################################################
+########## estilos de las publicaciones que hace el usuario ##########
+####################################################################*/
+#publicaciones{
+	width: 100%;
+	min-height: 580px;
+	max-height: 100%;
+	overflow: hidden;
+}
+#publicaciones .pub-elegir{
+	margin: 30px auto;
+	width: 85%;
+	height: 500px;
+	background-color: white;
+	padding: 46px;
+}
+#publicaciones .pub-elegir h2{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 30px;
+	color: #073E44;
+	padding-bottom: 5px;
+}
+#publicaciones .pub-elegir p{
+	text-align: center;
+	padding-bottom: 50px;
+	color: grey;
+}
+#publicaciones .pub-elegir .pub-nuevo{
+	width: 350px;
+	height: 200px;
+	float: left;
+	cursor: pointer;
+	transition:all 1s; 
+
+}
+#publicaciones .pub-elegir .pub-nuevo:hover{
+	box-shadow: 0px 0px 8px 6px #123146;
+	transition:all 1s; 
+}
+#publicaciones .pub-elegir .pub-nuevo img{
+	margin-left: 55px;
+	margin-top: 15px;
+	width: 250px;
+	height: 150px;
+	border-radius: 6px;
+	background-color: #222222;
+}
+#publicaciones .pub-elegir .pub-nuevo .igual{
+	height: 2px;
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+#publicaciones .pub-elegir .pub-nuevo .distinto{
+	height: 2px;
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+/*#######################################################################
+#### ventana modal del mormulario de de agregar autos nuevos ############
+#######################################################################*/
+#bg-modal-cars-new{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: 100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 10;
+	visibility: hidden;
+}
+#bg-modal-cars-new .content-cars-new{
+	margin: 5px auto;
+	width: 90%;
+	height: 98.5%;
+	background-color: white;
+	padding: 6px 50px 6px 50px;
+}
+#bg-modal-cars-new .content-cars-new .form-cars-new{
+	font-family: sans-serif;
+	color: #333333;
+}
+#bg-modal-cars-new .content-cars-new .form-cars-new h3{
+	margin-top: 6px;
+}
+#bg-modal-cars-new .content-cars-new .form-cars-new .obligatorio{
+	font-size: 12px;
+	padding-bottom: 10px;
+}
+#bg-modal-cars-new .content-cars-new .form-cars-new span{
+	font-size: 14px;
+}
+#bg-modal-cars-new .content-cars-new .form-cars-new .f-marca{
+	margin-right: 250px;
+}
+#bg-modal-cars-new .content-cars-new .form-cars-new .f-modelo{
+	margin-right: 243px;
+}	
+#bg-modal-cars-new .content-cars-new .form-cars-new .f-origen{
+	margin-right: 247px;
+}
+#bg-modal-cars-new .content-cars-new .form-cars-new .f-precio{
+	margin-right: 218px;
+}
+#bg-modal-cars-new .content-cars-new .form-cars-new select{
+	border:2px solid #000F19;
+	margin-bottom: 10px;
+	padding: 4px;
+	color: black;
+}
+#bg-modal-cars-new .content-cars-new .form-cars-new input,select{
+	width: 350px;
+	padding: 4px;
+	padding-left: 5px;
+	margin-bottom: 11px;
+	font-size: 15px;
+	border-color: #000F19;
+	color: black;
+	outline: none;
+}
+#bg-modal-cars-new .content-cars-new .form-cars-new .fotos-cars{
+	margin-top: -18px;
+	width: 700px;
+	height: auto;
+	background-color: #2193C9;
+	float: right;
+	padding: 4px;
+	border-radius: 4px;
+	color: white;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+#bg-modal-cars-new .content-cars-new .form-cars-new .fotos-cars1{
+	margin-top: 8px;
+	background-color: #2193C9;
+	color: white;
+	padding: 4px;
+	border-radius: 4px;
+	margin-bottom: 6px;
+	color: white;
+	font-family: sans-serif;
+}
+#bg-modal-cars-new .content-cars-new .form-cars-new input[type="file"]{
+	margin: 8px 0px 8px 0px;
+	width: 368px;
+	background-color: #000F19;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+#bg-modal-cars-new .content-cars-new .form-cars-new input[type="file"]:hover{
+	background-color: #2193C9;
+	color: black;
+}
+#bg-modal-cars-new .content-cars-new .form-cars-new input.files{
+	width: 368px;
+	margin: 10px 0px 5px 125px;
+	background-color: #000F19;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+#bg-modal-cars-new .content-cars-new .form-cars-new input.files:hover{
+	background-color: #2193C9;
+	color: black;
+}
+#bg-modal-cars-new .content-cars-new .form-cars-new label.error{
+	margin-left: 20px;
+	padding: 6px;
+	background-color: #FED1D1;
+	color: 	red;
+    border: 1.5px solid red;
+}
+#bg-modal-cars-new .content-cars-new .form-cars-new textarea{
+	margin-top: 7px;
+	width: 656px;
+	max-width: 656px;
+	min-height: 60px;
+	max-height: 92px;
+	padding: 5px;
+	font-family: sans-serif;
+	border-color: #000F19;
+}
+#bg-modal-cars-new .content-cars-new .form-cars-new .btn-upload{
+	margin: 15px 90px 0px 0px;
+	float: right;
+	width: 250px;
+	padding: 15px;
+	background-color: #011222;
+	color: white;
+	font-size: 20px;
+	border-radius: 8px;
+	cursor: pointer;
+	border: none;
+	border: 2px solid black;
+}
+#bg-modal-cars-new .content-cars-new .form-cars-new .btn-upload:hover{
+	background-color: #123146;
+	border-radius: 8px;
+	border: 2px solid black;
+}	
+#bg-modal-cars-new .content-cars-new .form-cars-new .fa-times-circle{
+	font-size: 30px;
+	color: black;
+	float: right;
+}
+
+/*#######################################################################
+#### ventana modal del mormulario de de agregar autos usados ############
+#######################################################################*/
+#bg-modal-cars-old{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: 100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 10;
+	visibility: hidden;
+}
+#bg-modal-cars-old .content-cars-old{
+	margin: 5px auto;
+	width: 90%;
+	height: 98.5%;
+	background-color: white;
+	padding: 6px 50px 6px 50px;
+}
+#bg-modal-cars-old .content-cars-old .form-cars-old{
+	font-family: sans-serif;
+	color: #333333;
+}
+#bg-modal-cars-old .content-cars-old .form-cars-old h3{
+	margin-top: 6px;
+}
+#bg-modal-cars-old .content-cars-old .form-cars-old .obligatorio{
+	font-size: 12px;
+	padding-bottom: 10px;
+}
+#bg-modal-cars-old .content-cars-old .form-cars-old span{
+	font-size: 14px;
+}
+#bg-modal-cars-old .content-cars-old .form-cars-old .f-marca{
+	margin-right: 250px;
+}
+#bg-modal-cars-old .content-cars-old .form-cars-old .f-modelo,.f-version{
+	margin-right: 243px;
+}	
+#bg-modal-cars-old .content-cars-old .form-cars-old .f-anio{
+	margin-right: 265px;
+}
+#bg-modal-cars-old .content-cars-old .form-cars-old .f-combustible{
+	margin-right: 211px;
+}
+#bg-modal-cars-old .content-cars-old .form-cars-old .f-km{
+	margin-right: 223px;
+}
+#bg-modal-cars-old .content-cars-old .form-cars-old .f-provincia{
+	margin-right: 232px;
+}
+#bg-modal-cars-old .content-cars-old .form-cars-old .f-ciudad{
+	margin-right: 245px;
+}
+#bg-modal-cars-old .content-cars-old .form-cars-old .f-precio{
+	margin-right: 218px;
+}
+#bg-modal-cars-old .content-cars-old .form-cars-old select{
+	border:2px solid #000F19;
+	color: black;
+	outline: none;
+
+}
+#bg-modal-cars-old .content-cars-old .form-cars-old select, input{
+	width: 350px;
+	padding: 4px;
+	padding-left: 5px;
+	margin-bottom: 4px;
+	font-size: 15px;
+	border-color: #000F19;
+	color: black;
+	outline: none;
+}
+#bg-modal-cars-old .content-cars-old .form-cars-old .fotos-cars{
+	margin-top: -28px;
+	width: 700px;
+	height: auto;
+	background-color: #2193C9;
+	float: right;
+	padding: 4px;
+	border-radius: 4px;
+	color: white;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+#bg-modal-cars-old .content-cars-old .form-cars-old .fotos-cars1{
+	background-color: #2193C9;
+	color: white;
+	padding: 4px;
+	border-radius: 4px;
+	margin-bottom: 6px;
+	color: white;
+	font-family: sans-serif;
+}
+#bg-modal-cars-old .content-cars-old .form-cars-old input[type="file"]{
+	width: 368px;
+	background-color: #000F19;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+#bg-modal-cars-old .content-cars-old .form-cars-old input[type="file"]:hover{
+	background-color: #2193C9;
+	color: black;
+}
+#bg-modal-cars-old .content-cars-old .form-cars-old label.error{
+	margin-left: 20px;
+	padding: 6px;
+	background-color: #FED1D1;
+	color: 	red;
+    border: 1.5px solid red;
+}
+#bg-modal-cars-old .content-cars-old .form-cars-old textarea{
+	margin-top: 3px;
+	width: 656px;
+	max-width: 656px;
+	min-height: 60px;
+	max-height: 92px;
+	padding: 5px;
+	font-family: sans-serif;
+	border-color: #000F19;
+	outline: none;
+}
+#bg-modal-cars-old .content-cars-old .form-cars-old .btn-upload{
+	margin: 10px 90px 0px 0px;
+	float: right;
+	width: 250px;
+	padding: 15px;
+	background-color: #011222;
+	color: white;
+	font-size: 20px;
+	border-radius: 8px;
+	cursor: pointer;
+	border: none;
+	border: 2px solid black;
+}
+#bg-modal-cars-old .content-cars-old .form-cars-old .btn-upload:hover{
+	background-color: #123146;
+	border-radius: 8px;
+	border: 2px solid black;
+}	
+#bg-modal-cars-old .content-cars-old .form-cars-old .fa-times-circle{
+	font-size: 30px;
+	color: black;
+	float: right;
+}
+
+/*##########################################################################
+############### codigo de las motos para agregar o subir una moto por el 
+usuario ####################################################################*/
+
+#bg-modal-cars-motos{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: 100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 10;
+	visibility: hidden;
+}
+#bg-modal-cars-motos .content-cars-motos{
+	margin: 5px auto;
+	width: 90%;
+	height: 98.5%;
+	background-color: white;
+	padding: 6px 50px 6px 50px;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos{
+	font-family: sans-serif;
+	color: #333333;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos h3{
+	margin-top: 6px;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos .obligatorio{
+	font-size: 12px;
+	padding-bottom: 10px;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos span{
+	font-size: 14px;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos .f-marca-m{
+	margin-right: 250px;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos .f-modelo-m{
+	margin-right: 243px;
+}	
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos .f-anio-m{
+	margin-right: 265px;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos .f-cilindrada-m{
+	margin-right: 225px;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos .f-motor-m{
+	margin-right: 252px;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos .f-km-m{
+	margin-right: 223px;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos .f-provincia-m{
+	margin-right: 232px;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos .f-ciudad-m{
+	margin-right: 245px;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos .f-precio-m{
+	margin-right: 218px;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos .f-condicion-m{
+	margin-right: 227px;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos .f-vendedor-m{
+	margin-right: 228px;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos select{
+	border:2px solid #000F19;
+	color: black;
+	outline: none;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos input,select{
+	width: 350px;
+	padding: 2px;
+	padding-left: 5px;
+	margin-bottom: 4px;
+	font-size: 15px;
+	border-color: #000F19;
+	color: black;
+	outline: none;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos .fotos-cars{
+	margin-top: -28px;
+	width: 700px;
+	height: auto;
+	background-color: #2193C9;
+	float: right;
+	padding: 4px;
+	border-radius: 4px;
+	color: white;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos .fotos-cars1{
+	background-color: #2193C9;
+	color: white;
+	padding: 3px;
+	border-radius: 4px;
+	margin-bottom: 6px;
+	color: white;
+	font-family: sans-serif;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos input[type="file"]{
+	width: 368px;
+	height: 25px;
+	background-color: #000F19;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos input[type="file"]:hover{
+	background-color: #2193C9;
+	color: black;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos label.error{
+	margin-left: 20px;
+	padding: 2px;
+	background-color: #FED1D1;
+	color: 	red;
+    border: 1.5px solid red;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos textarea{
+	margin-top: 3px;
+	width: 656px;
+	max-width: 656px;
+	min-height: 55px;
+	max-height: 88px;
+	padding: 5px;
+	font-family: sans-serif;
+	border-color: #000F19;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos .btn-upload{
+	margin: 10px 90px 0px 0px;
+	float: right;
+	width: 250px;
+	padding: 15px;
+	background-color: #011222;
+	color: white;
+	font-size: 20px;
+	border-radius: 8px;
+	cursor: pointer;
+	border: none;
+	border: 2px solid black;
+}
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos .btn-upload:hover{
+	background-color: #123146;
+	border-radius: 8px;
+	border: 2px solid black;
+}	
+#bg-modal-cars-motos .content-cars-motos .form-cars-motos .fa-times-circle{
+	font-size: 30px;
+	color: black;
+	float: right;
+}
+
+/*####################################################################
+########### muestreo del mensaje de success al momento de subir los
+ datos de autos usados ##############################################*/
+ #view-add{
+ 	width: 100%;
+ 	height: 100%;
+ }
+ #view-add .content-add{
+ 	margin: 20px auto;
+ 	margin-bottom: 35px;
+	width: 80%;
+	height: auto;
+	background-color: white;
+	position: relative;
+ }
+ #view-add .content-add .suceful img{
+ 	display: block;
+	width: 500px;
+	height: 300px;
+ 	margin: 0px auto;
+ }
+ #view-add .content-add .suceful .aviso{
+	text-align: center;
+	color: green;
+	font-size: 40px;
+	font-weight: bold;
+ }
+ #view-add .content-add .suceful .p-aviso{
+ 	margin:20px auto;
+ 	padding-bottom: 20px;
+ 	width: 500px;
+	font-family: sans-serif;
+	font-size: 25px;
+	text-align: center;
+ }
+ #view-add .content-add .suceful .s-salir{
+	position: absolute;
+	right: 50px;
+	bottom: 20px;
+	width: 170px;
+	background-color: #195FB3;
+	padding: 8px;
+	color: white;
+	border-radius: 6px;
+	padding-left: 65px;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-decoration:none;
+ }
+ #view-add .content-add .suceful .v-volver{
+	position: absolute;
+	left: 50px;
+	bottom: 20px;
+	width: 170px;
+	background-color: #195FB3;
+	padding: 8px;
+	color: white;
+	border-radius: 6px;
+	padding-left: 65px;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-decoration:none;
+ }
+ #view-add .content-add .suceful .s-salir:hover{
+  background-color: #588BC5;
+}
+ #view-add .content-add .suceful .v-volver:hover{
+  background-color: #588BC5;
+}
+
+/*########################################################################
+##### busqueda avanzada ###################################################
+########################################################################*/
+
+#content-busqueda{
+	width: 100%;
+	height: 350px;
+	max-height: 100%;
+}
+#content-busqueda .content-form{
+	margin: 80px auto;
+	width: 100%;
+	height: 250px;
+	background-color: white;
+	position: relative;
+}
+#content-busqueda .content-form h2{
+	padding-top: 15px;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 25px;
+}
+#content-busqueda .content-form .form-avanzado{
+	margin: auto;
+	padding: 20px;
+	padding-left: 170px;
+	width: 100%;
+	height: 150px;
+	background-color: #DDDDDD;
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	border-radius: 15px;
+}
+#content-busqueda .content-form .form-avanzado .desp-bus{
+	display: block;
+	width: 200px;
+	height: 30px;
+	float: left;
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 25px;
+	font-size: 18px;
+	text-decoration: none;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	font-family: sans-serif;
+	padding-bottom: 35px;
+	transition: 1s;
+}
+#content-busqueda .content-form .form-avanzado .espacio-motos{
+	margin-right: 300px;
+}
+#content-busqueda .content-form .form-avanzado .desp-bus:hover{
+	background-color: #8C8B8B;
+	transition: 1s;
+}
+#select-nuevos{
+	width: 87%;
+	height:auto;
+	background-color: black;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border: 6px solid black;
+}
+#select-nuevos select:first-child{
+	border-radius: 6px 0px 0px 6px;
+}
+#select-nuevos select{
+	margin-right: -1px;
+	width: 250px;
+	padding:10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	float: left;
+	cursor: pointer;
+}
+#select-nuevos .btn-avanzado{
+	margin-top: -1px;
+	margin-left: -1.5px;
+	width: 250px;
+	padding:10px;
+	font-family: sans-serif;
+	font-size: 20px;
+	border-radius: 0px 6px 6px 0px;
+	cursor: pointer;
+	background-color: #588BC5;
+	color: white;
+}
+#select-nuevos .btn-avanzado:hover{
+	background-color: #03314F;
+}
+/* select usados del buscador avanzado */
+#select-usados{
+	width: 74.5%;
+	height:auto;
+	background-color: black;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border: 6px solid black;
+	position: absolute;
+	top: 74px;
+	left: 170px;
+	visibility: hidden;
+}
+#select-usados select:first-child{
+	border-radius: 6px 0px 0px 6px;
+}
+#select-usados select{
+	margin-right: -1px;
+	width: 187px;
+	padding:10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	float: left;
+	cursor: pointer;
+}
+#select-usados .btn-avanzado{
+	margin-top: -1px;
+	margin-left: -1.5px;
+	width: 248px;
+	padding:10px;
+	font-family: sans-serif;
+	font-size: 20px;
+	border-radius: 0px 6px 6px 0px;
+	cursor: pointer;
+	background-color: #588BC5;
+	color: white;
+}
+#select-usados .btn-avanzado:hover{
+	background-color: #03314F;
+}
+
+/* select motos del buscador avanzado */
+#select-motos{
+	width: 74.7%;
+	height:auto;
+	background-color: black;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border: 6px solid black;
+	position: absolute;
+	top:74px;
+	left:170px;
+	visibility: hidden;
+}
+#select-motos select:first-child{
+	border-radius: 6px 0px 0px 6px;
+}
+#select-motos select{
+	margin-right: -1px;
+	width: 250px;
+	padding:10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	float: left;
+	cursor: pointer;
+}
+#select-motos .btn-avanzado{
+	margin-top: -1px;
+	margin-left: -1.5px;
+	width: 250px;
+	padding:10px;
+	font-family: sans-serif;
+	font-size: 20px;
+	border-radius: 0px 6px 6px 0px;
+	cursor: pointer;
+	background-color: #588BC5;
+	color: white;
+}
+#select-motos .btn-avanzado:hover{
+	background-color: #03314F;
+}
+
+
+/*##############################################################################
+########## configuracion de las categorias para editar o eliminar ##############
+##############################################################################*/
+#config-categorias{
+	padding: 10px;
+	font-family: sans-serif;
+}
+#config-categorias h1{
+	padding-bottom: 10px;
+}
+#config-categorias .letra{
+	padding: 20px;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	float: left;
+}
+#config-categorias ul li ul{
+	margin-top: 0px;
+	display: block;
+	width: 200px;
+	height: 150px;
+	position: relative;
+}
+#config-categorias ul li ul .palabrasuno{
+	position: absolute;
+	top: 0px;
+	left: 60px;
+}
+#config-categorias ul li ul .palabrasdos{
+	position: absolute;
+	top: 17px;
+	left: 60px;
+}
+#config-categorias ul li ul .palabrastres{
+	position: absolute;
+	top: 34px;
+	left: 60px;
+}
+#config-categorias ul li ul .palabrascuatro{
+	position: absolute;
+	top: 51px;
+	left: 60px;
+}
+#config-categorias ul li ul .palabrascinco{
+	position: absolute;
+	top: 68px;
+	left: 60px;
+}
+#config-categorias ul li ul .palabrasseis{
+	position: absolute;
+	top: 84px;
+	left: 60px;
+}
+#config-categorias ul li ul .palabrassiete{
+	position: absolute;
+	top: 100px;
+	left: 60px;
+}
+
+#config-categorias ul li ul li a{
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+	font-family: sans-serif;
+}
+#config-categorias ul li ul li a:hover{
+	text-decoration: underline;
+}
+
+/* estilos de muestreo de los autos para la configuracion de los mismos */
+
+#listar-autos-config{
+	width: 100%;
+	min-height: 650px;
+	max-height: 100%;
+	overflow: hidden;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#listar-autos-config .titulo-config{
+	text-align: center;
+	font-family: sans-serif;
+	color: white;
+}
+
+/*estilos del contador de autos*/
+#listar-autos-config .contador-c{
+	color: white;
+	margin: -13px 50px 10px 50px;
+	border-bottom: 2px solid white;
+}
+#listar-autos-config .contador-c p b{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*################################################################################*/
+
+#listar-autos-config .listado{
+	width: 95%;
+	margin: auto;
+}
+#listar-autos-config .listado .ver-listado{
+	margin-left: 15px;
+	margin-bottom: 20px;
+	width: 300px;
+	height: 400px;
+	float: left;
+	background-color: white;
+}
+#listar-autos-config .listado .ver-listado img{
+	width: 300px;
+	height: 225px;
+}
+#listar-autos-config .listado .ver-listado h3{
+	padding-top: 15px;
+	padding-left: 10px;
+	font-size: 25px;
+	color: #595959;
+	font-family: arial;
+}
+#listar-autos-config .listado .ver-listado p{
+	padding-top: 5px;
+	padding-left: 10px;
+	font-size: 15px;
+	color: darkgrey;
+	font-family: sans-serif;
+}
+#listar-autos-config .listado .ver-listado b{
+    color: #0668B5;
+	font-size: 21px;
+}
+#listar-autos-config .listado .ver-listado span{
+	margin-top: 20px;
+	margin-left: 10px;
+	display: block;
+	width: 270px;
+	height: 28px;
+	background-color: #EEEEEE;
+	font-size: 14px;
+	padding: 5px 0px 5px 10px;
+	font-family: sans-serif;
+	color: grey;
+}
+#listar-autos-config .listado .ver-listado span strong{
+	color: black;
+	font-weight: normal;
+}
+#listar-autos-config .listado .ver-listado .link-conf{
+	display: inline-block;
+	width: 130px;
+	text-align: center;
+	margin-top: 5px;
+	background-color: #195FB3;
+	color: white;
+	font-family: sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 10px 30px 10px 30px;
+}
+#listar-autos-config .listado .ver-listado .espaciado{
+	margin-left: 17px;
+}
+#listar-autos-config .listado .ver-listado .link-conf:hover{
+	background-color: #588BC5;
+}
+#listar-autos-config .elegir-otro{
+	float: right;
+	margin-right: 50px;
+	margin-top: -20px;
+	font-family: sans-serif;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 14px;
+}
+#listar-autos-config .elegir-otro:hover{
+	text-decoration: underline;
+}
+
+/* style del panel de edicion de los autos nuevos */
+
+#edit-cars-new{
+	width: 100%;
+	height: 600px;
+	max-height: 100%;
+	font-family: sans-serif;
+	background-color: rgba(0,0,0,0.8);
+}
+#edit-cars-new .title-config{
+	text-align: center;
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 25px;
+}
+#edit-cars-new .f-marca-config,.f-modelo-config,.f-origen-config,.f-precio-config{
+	color: white;
+	margin-right: 195px;
+}
+#edit-cars-new .f-marca-config{
+	margin-left: 99px;
+}
+#edit-cars-new .f-modelo-config{
+	margin-left: 91px;
+}
+#edit-cars-new .f-origen-config{
+	margin-left: 96px;
+}
+#edit-cars-new .f-precio-config{
+	margin-left: 63px;
+}
+#edit-cars-new .inputs{
+	width: 400px;
+	height: 30px;
+	border: none;
+	margin-bottom: 10px;
+	padding-left: 15px;
+}
+#edit-cars-new .title-2{
+	margin-left: 50px;
+	color: white;
+	font-size: 21px;
+	padding: 15px 15px;
+}
+#edit-cars-new .img-conf{
+	width: 200px;
+	height: 200px;
+	margin-left: 70px;
+	float: left;
+}
+#edit-cars-new .img-conf img{
+	width: 200px;
+	height: 160px;
+	border-radius: 6px;
+}
+#edit-cars-new .img-conf p{
+	color: white;
+	text-align: center;
+}
+#edit-cars-new .recomendacion{
+	margin-left: 350px;
+	margin-bottom: 12px;
+	color: white;
+	border-bottom: 20px;
+}
+#edit-cars-new .file-con{
+	margin-left: 80px;
+	width: 350px;
+	padding: 4px;
+	background-color: #03314F;
+	color: white;
+	border: 1.5px solid white;
+}
+#edit-cars-new .file-con:hover{
+	background-color: #05588F;
+	cursor: pointer;
+}
+#edit-cars-new .title-3{
+	color: white;
+	float: right;
+	margin-right: 300px;
+}
+#edit-cars-new .content-conf{
+	margin-right: 200px;
+	width: 360px;
+	float: right;
+}
+#edit-cars-new .files-config{
+	margin-left: 20px;
+	width: 156px;
+	padding: 4px;
+	background-color: #03314F;
+	color: white;
+	border: 1.5px solid white;
+}
+#edit-cars-new .files-config:hover{
+	background-color: #05588F;
+	cursor: pointer;
+}
+#edit-cars-new .title-4{
+	margin: 10px;
+	margin-left: 350px;
+	color: white;
+}
+#edit-cars-new .descripcion-config{
+	margin-left: 80px;
+	width: 405px;
+	height: 100px;
+	resize: none;
+	padding: 10px;
+	font-family: sans-serif;
+}
+#edit-cars-new .btn-edit{
+	margin-top: 15px;
+	margin-left: 605px;
+	width: 200px;
+	height: 35px;
+	padding: 4px;
+	background-color: #123146;
+	border: none;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	border-radius: 6px;
+	font-weight: bold;
+	transition: 1s;
+}
+#edit-cars-new .btn-edit:hover{
+	background-color: #05588F;
+}
+#edit-cars-new .remove-new{
+	margin: auto;
+	width: 400px;
+	height: 400px;
+	background-color: white;
+	border-radius: 6px;
+}
+#edit-cars-new .remove-new img{
+	border-radius: 6px 6px 0px 0px;
+	width: 400px;
+	height: 220px;
+}
+#edit-cars-new .remove-new h3{
+	color: grey;
+	text-align: center;
+	padding: 15px;
+}
+#edit-cars-new .remove-new p{
+	padding-left: 25px;
+	color: grey;
+	padding-bottom: 10px;
+}
+#edit-cars-new .remove-new p b{
+	color: black;
+}
+#edit-cars-new .remove-new span{
+	color: grey;
+	padding-left: 25px;
+}
+#edit-cars-new .remove-new span strong{
+	color: black;
+}
+#edit-cars-new .remove-new .btn-remove{
+	margin-top: 15px;
+	width: 300px;
+	margin-left: 50px;	
+	background-color: #588BC5;
+	font-size: 18px;
+	font-weight: bold;
+	border: none;
+	border: 1px solid #123146;
+	cursor: pointer;
+	color: white;
+	border-radius: 4px;
+}
+#edit-cars-new .remove-new .btn-remove:hover{
+	background-color: #195FB3;
+}
+
+/* estilos de la configuracion de los autos usados, el muestreo parecido al panel pero con 
+opciones de editar y eliminar */
+#listar-autos-config .listado .ver-listado-usados{
+	margin-left: 15px;
+	margin-bottom: 20px;
+	width: 300px;
+	height: 400px;
+	float: left;
+	background-color: white;
+	position: relative;
+}
+#listar-autos-config .listado .ver-listado-usados img{
+	width: 300px;
+	height: 220px;
+}
+#listar-autos-config .listado .ver-listado-usados h3{
+	color: grey;
+	font-family: sans-serif;
+	padding: 10px;
+}
+#listar-autos-config .listado .ver-listado-usados b{
+	color: #195FB3;
+	font-size: 25px;
+	position: absolute;
+	left: 13px;
+	bottom: 90px;
+}
+#listar-autos-config .listado .ver-listado-usados p{
+	position: absolute;
+	right: 13px;
+	bottom: 90px;
+	font-weight: bold;
+	font-size: 18px;
+}
+#listar-autos-config .listado .ver-listado-usados span{
+	position: absolute;
+	left: 13px;
+	bottom: 70px;
+	font-size: 17px;
+	color: grey;
+}
+#listar-autos-config .listado .ver-listado-usados .link-conf-u{
+	display: inline-block;
+	width: 130px;
+	text-align: center;
+	margin-top: 5px;
+	background-color: #195FB3;
+	color: white;
+	font-family: sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 10px 30px 10px 30px;
+	margin-bottom: 0px;
+}
+#listar-autos-config .listado .ver-listado-usados .espaciado-1{
+	position: absolute;
+	left: 15px;
+	bottom: 10px;
+}
+#listar-autos-config .listado .ver-listado-usados .espaciado-2{
+	position: absolute;
+	right: 15px;
+	bottom: 10px;
+}
+#listar-autos-config .listado .ver-listado-usados .link-conf-u:hover{
+	background-color: #588BC5;
+}
+
+/*####################################################################################
+################ style del panel de edicion de los autos usados ######################
+#####################################################################################*/
+
+#edit-cars-old{
+	width: 100%;
+	height: 850px;
+	max-height: 100%;
+	font-family: sans-serif;
+	background-color: rgba(0,0,0,0.8);
+}
+#edit-cars-old .title-config{
+	text-align: center;
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 25px;
+}
+#edit-cars-old .f-marca-config,.f-modelo-config,.f-version-config,.f-anio-config,
+.f-combustible-config,.f-km-config,.f-provincia-config,.f-ciudad-config,.f-precio-config{
+	color: white;
+	margin-right: 195px;
+}
+#edit-cars-old .f-marca-config{
+	margin-left: 99px;
+}
+#edit-cars-old .f-modelo-config{
+	margin-left: 91px;
+}
+#edit-cars-old .f-version-config{
+	margin-left: 91px;
+}
+#edit-cars-old .f-anio-config{
+	margin-left: 115px;
+}
+#edit-cars-old .f-combustible-config{
+	margin-left: 55px;
+}
+#edit-cars-old .f-km-config{
+	margin-left: 68px;
+}
+#edit-cars-old .f-provincia-config{
+	margin-left: 78px;
+}
+#edit-cars-old .f-ciudad-config{
+	margin-left: 93px;
+}
+#edit-cars-old .f-precio-config{
+	margin-left: 63px;
+}
+#edit-cars-old .inputs{
+	width: 400px;
+	height: 30px;
+	border: none;
+	margin-bottom: 10px;
+	padding-left: 15px;
+}
+#edit-cars-old .title-2{
+	margin-left: 50px;
+	color: white;
+	font-size: 21px;
+	padding: 15px 15px;
+}
+#edit-cars-old .img-conf{
+	width: 200px;
+	height: 200px;
+	margin-left: 70px;
+	float: left;
+}
+#edit-cars-old .img-conf img{
+	width: 200px;
+	height: 160px;
+	border-radius: 6px;
+}
+#edit-cars-old .img-conf p{
+	color: white;
+	text-align: center;
+}
+#edit-cars-old .recomendacion{
+	margin-left: 350px;
+	margin-bottom: 12px;
+	color: white;
+	border-bottom: 20px;
+}
+#edit-cars-old .file-con{
+	margin-left: 80px;
+	width: 350px;
+	padding: 4px;
+	background-color: #03314F;
+	color: white;
+	border: 1.5px solid white;
+}
+#edit-cars-old .file-con:hover{
+	background-color: #05588F;
+	cursor: pointer;
+}
+#edit-cars-old .title-3{
+	color: white;
+	float: right;
+	margin-right: 300px;
+}
+#edit-cars-old .content-conf{
+	margin-right: 200px;
+	width: 360px;
+	float: right;
+}
+#edit-cars-old .files-config{
+	margin-left: 20px;
+	width: 156px;
+	padding: 4px;
+	background-color: #03314F;
+	color: white;
+	border: 1.5px solid white;
+}
+#edit-cars-old .files-config:hover{
+	background-color: #05588F;
+	cursor: pointer;
+}
+#edit-cars-old .title-4{
+	margin: 10px;
+	margin-left: 350px;
+	color: white;
+}
+#edit-cars-old .descripcion-config{
+	margin-left: 80px;
+	width: 405px;
+	height: 100px;
+	resize: none;
+	padding: 10px;
+	font-family: sans-serif;
+}
+#edit-cars-old .btn-edit{
+	margin-top: 15px;
+	margin-left: 605px;
+	width: 200px;
+	height: 35px;
+	padding: 4px;
+	background-color: #123146;
+	border: none;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	border-radius: 6px;
+	font-weight: bold;
+	transition: 1s;
+}
+#edit-cars-old .btn-edit:hover{
+	background-color: #05588F;
+}
+#edit-cars-old .remove-new{
+	margin: auto;
+	width: 400px;
+	height: 400px;
+	background-color: white;
+	border-radius: 6px;
+}
+#edit-cars-old .remove-new img{
+	border-radius: 6px 6px 0px 0px;
+	width: 400px;
+	height: 220px;
+}
+#edit-cars-old .remove-new h3{
+	color: grey;
+	text-align:left;
+	padding: 10px 0px 10px 20px;
+	font-size: 25px;
+}
+#edit-cars-old .remove-new p{
+	padding-left: 20px;
+	color: grey;
+	padding-bottom: 0px;
+	font-size: 25px;
+	font-weight: bold;
+	color: #1963B6;
+}
+#edit-cars-old .remove-new b{
+	float: right;
+	color: black;
+	margin-top: -20px;
+	margin-right: 35px;
+}
+#edit-cars-old .remove-new span,strong{
+	margin-top: -15px;
+	color: grey;
+	padding-left: 20px;
+}
+#edit-cars-old .remove-new .btn-remove{
+	margin-top: 15px;
+	width: 300px;
+	margin-left: 50px;	
+	background-color: #588BC5;
+	font-size: 18px;
+	font-weight: bold;
+	border: none;
+	border: 1px solid #123146;
+	cursor: pointer;
+	color: white;
+	border-radius: 4px;
+}
+#edit-cars-old .remove-new .btn-remove:hover{
+	background-color: #195FB3;
+}
+
+/*############################################################################################################
+################### muestreo de motos para editar o eliminar #################################################
+############################################################################################################*/
+#position-update{
+	margin-left: 270px;
+	width: 1140px;
+	height: 100%;
+	position: relative;
+}
+.update-motos .motos-view-edit{
+	margin-left: 15px;
+	margin-bottom: 20px;
+	width: 220px;
+	height: 300px;
+	float: left;
+	background-color: white;
+	position: relative;
+}
+.update-motos .motos-view-edit img{
+	width: 220px;
+	height: 164px;
+}
+.update-motos .motos-view-edit h3{
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #595959;
+	font-family: arial;
+}
+.update-motos .motos-view-edit p{
+	font-size: 12px;
+	font-weight: bold;
+	color: grey;
+	font-family: sans-serif;
+	position: absolute;
+	left: 10px;
+	bottom: 55px;
+}
+.update-motos .motos-view-edit b{
+    color: #0668B5;
+	font-size: 16px;
+	font-family: arial;
+	position: absolute;
+	left: 10px;
+	bottom: 70px;
+}
+.update-motos .motos-view-edit .link-conf-u{
+	display: inline-block;
+	width:100px;
+	text-align: center;
+	margin-top: 5px;
+	background-color: #195FB3;
+	color: white;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 8px 20px 8px 20px;
+}
+.update-motos .motos-view-edit .espaciado-1{
+	position: absolute;
+	left: 7px;
+	bottom: 10px;
+}
+.update-motos .motos-view-edit .espaciado-2{
+	position: absolute;
+	right: 7px;
+	bottom: 10px;
+}
+.update-motos .motos-view-edit .link-conf-u:hover{
+	background-color: #588BC5;
+}
+/*##########################################################################################################
+############# formulario de edicion de la motos ############################################################
+###########################################################################################################*/
+#edit-motorcycle{
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
+	padding-bottom: 50px;
+	font-family: sans-serif;
+	background-color: rgba(0,0,0,0.8);
+}
+#edit-motorcycle .title-config{
+	text-align: center;
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 25px;
+}
+#edit-motorcycle .f-marca-config,.f-modelo-config,.f-cilindrada-config,.f-anio-config,
+.f-km-config,.f-provincia-config,.f-ciudad-config,.f-precio-config,.f-motor-config
+,.f-condicion-config,.f-vendedor-config{
+	color: white;
+	margin-right: 195px;
+}
+#edit-motorcycle .f-marca-config{
+	margin-left: 99px;
+}
+#edit-motorcycle .f-modelo-config{
+	margin-left: 91px;
+}
+#edit-motorcycle .f-cilindrada-config{
+	margin-left: 72px;
+}
+#edit-motorcycle .f-anio-config{
+	margin-left: 115px;
+}
+#edit-motorcycle .f-km-config{
+	margin-left: 68px;
+}
+#edit-motorcycle .f-motor-config{
+	margin-left: 102px;
+}
+#edit-motorcycle .f-provincia-config{
+	margin-left: 78px;
+}
+#edit-motorcycle .f-ciudad-config{
+	margin-left: 93px;
+}
+#edit-motorcycle .f-precio-config{
+	margin-left: 63px;
+}
+#edit-motorcycle .f-condicion-config{
+	margin-left: 72px;
+}
+#edit-motorcycle .f-vendedor-config{
+	margin-left: 75px;
+}
+#edit-motorcycle .inputs{
+	width: 400px;
+	height: 30px;
+	border: none;
+	margin-bottom: 10px;
+	padding-left: 15px;
+}
+#edit-motorcycle .title-2{
+	margin-left: 50px;
+	color: white;
+	font-size: 21px;
+	padding: 15px 15px;
+}
+#edit-motorcycle .img-conf{
+	width: 200px;
+	height: 200px;
+	margin-left: 70px;
+	float: left;
+}
+#edit-motorcycle .img-conf img{
+	width: 200px;
+	height: 160px;
+	border-radius: 6px;
+}
+#edit-motorcycle .img-conf p{
+	color: white;
+	text-align: center;
+}
+#edit-motorcycle .recomendacion{
+	margin-left: 350px;
+	margin-bottom: 12px;
+	color: white;
+	border-bottom: 20px;
+}
+#edit-motorcycle .file-con{
+	margin-left: 80px;
+	width: 350px;
+	padding: 4px;
+	background-color: #03314F;
+	color: white;
+	border: 1.5px solid white;
+}
+#edit-motorcycle .file-con:hover{
+	background-color: #05588F;
+	cursor: pointer;
+}
+#edit-motorcycle .title-3{
+	color: white;
+	float: right;
+	margin-right: 300px;
+}
+#edit-motorcycle .content-conf{
+	margin-right: 200px;
+	width: 360px;
+	float: right;
+}
+#edit-motorcycle .files-config{
+	margin-left: 20px;
+	width: 156px;
+	padding: 4px;
+	background-color: #03314F;
+	color: white;
+	border: 1.5px solid white;
+}
+#edit-motorcycle .files-config:hover{
+	background-color: #05588F;
+	cursor: pointer;
+}
+#edit-motorcycle .title-4{
+	margin: 10px;
+	margin-left: 350px;
+	color: white;
+}
+#edit-motorcycle .descripcion-config{
+	margin-left: 80px;
+	width: 405px;
+	height: 100px;
+	resize: none;
+	padding: 10px;
+	font-family: sans-serif;
+}
+#edit-motorcycle .btn-edit{
+	margin-top: 15px;
+	margin-left: 605px;
+	width: 200px;
+	height: 35px;
+	padding: 4px;
+	background-color: #123146;
+	border: none;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	border-radius: 6px;
+	font-weight: bold;
+	transition: 1s;
+}
+#edit-motorcycle .btn-edit:hover{
+	background-color: #05588F;
+}
+#edit-motorcycle .remove-new{
+	margin: auto;
+	width: 400px;
+	height: 400px;
+	background-color: white;
+	border-radius: 6px;
+}
+#edit-motorcycle .remove-new img{
+	border-radius: 6px 6px 0px 0px;
+	width: 400px;
+	height: 220px;
+}
+#edit-motorcycle .remove-new h3{
+	color: grey;
+	text-align:left;
+	padding: 10px 0px 10px 20px;
+	font-size: 25px;
+}
+#edit-motorcycle .remove-new p{
+	padding-left: 20px;
+	color: grey;
+	padding-bottom: 0px;
+	font-size: 25px;
+	font-weight: bold;
+	color: #1963B6;
+}
+#edit-motorcycle .remove-new b{
+	float: right;
+	color: black;
+	margin-top: -20px;
+	margin-right: 35px;
+}
+#edit-motorcycle .remove-new span,strong{
+	margin-top: -15px;
+	color: grey;
+	padding-left: 20px;
+}
+#edit-motorcycle .remove-new .btn-remove{
+	margin-top: 15px;
+	width: 300px;
+	margin-left: 50px;	
+	background-color: #588BC5;
+	font-size: 18px;
+	font-weight: bold;
+	border: none;
+	border: 1px solid #123146;
+	cursor: pointer;
+	color: white;
+	border-radius: 4px;
+}
+#edit-motorcycle .remove-new .btn-remove:hover{
+	background-color: #195FB3;
+}
+
+/*##############################################################################################################
+####################### estilos de eliminar motos ##############################################################
+##############################################################################################################*/
+#style-eliminar-motos{
+	margin: 20px auto;
+	margin-bottom: 35px;
+	width: 98%;
+	height: 400px;
+	background-color: rgba(0,0,0,0.9);
+}
+#style-eliminar-motos .title-config-e{
+	text-align: center;
+	font-size: 25px; 
+	color: white;
+	padding:20px 0px 20px 0px;
+	font-family: sans-serif; 
+}
+#style-eliminar-motos .content-eliminar{
+	margin:auto;
+	margin-bottom: 60px;
+	width: 230px;
+	height: auto;
+	background-color: white;
+	border-radius: 2px;
+	font-family: sans-serif;
+}
+#style-eliminar-motos .content-eliminar img{
+	width: 230px;
+	height: 160px;
+	border-radius: 2px 2px 0px 0px;
+}
+#style-eliminar-motos .content-eliminar h3{
+	color: grey;
+	font-size: 18px;
+	padding: 0px 0px 2px 10px;
+}
+#style-eliminar-motos .content-eliminar p{
+	font-weight: bold;
+	color: #03314F;
+	padding: 0px 0px 5px 10px;
+	font-size: 17px;
+}
+#style-eliminar-motos .content-eliminar b{
+	color: darkgrey;
+	font-size: 15px;
+	padding: 0px 0px 3px 10px;
+}
+#style-eliminar-motos .content-eliminar span{
+	font-size: 13px;
+	padding: 0px 0px 3px 10px;
+	color: black;
+}
+#style-eliminar-motos .content-eliminar .btn-eliminar{
+	margin-top: 10px;
+	margin-left: 5px;
+	width: 220px;
+	background-color: #195FB3;
+	color: white;
+	cursor: pointer;
+	border:none;
+	padding: 7px;
+	border:1px solid #03314F;
+}
+#style-eliminar-motos .content-eliminar .btn-eliminar:hover{
+	background-color: #588BC5
+}
+
+/*##########################################################################################################
+###################### registro de usuarios ################################################################
+##########################################################################################################*/
+#registro{
+	width: 100%;
+	height: 100%;
+	background-color: unset;
+	padding: 30px 0px 30px 0px;
+}
+#registro .content-registro{
+	margin: auto;
+	margin-bottom: 20px;
+	width: 450px;
+	height: auto;
+	padding-top: 20px;
+	background-color: white;
+	padding: 30px 55px 30px 55px;
+	border-radius: 6px;
+}
+#registro .content-registro .usu-registro{
+	font-family: sans-serif;	
+}
+#registro .content-registro .usu-registro h3{
+	color: grey;
+	font-size: 25px;
+}
+#registro .content-registro .usu-registro p{
+	color: grey;
+	font-size: 13px;
+	padding-bottom: 10px;
+}
+#registro .content-registro .usu-registro form input{
+	border:unset;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	background-color: #F7F7F7;
+	width: 340px;
+	height: 48px;
+	border:1px solid #B5B5B5;
+	border-radius: 4px;
+	padding: 10px;
+}
+#registro .content-registro .usu-registro form input:focus{
+	outline:0px;
+	border:1px solid grey;
+}
+#registro .content-registro .usu-registro form .btn-registrarse{
+	margin-top: 10px;
+	width: 340px;
+	height: 40px;
+	background-color: #588BC5;
+	transition: 1s;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+#registro .content-registro .usu-registro form .btn-registrarse:hover{
+	background-color: #195FB3;
+	transition: 1s;
+}
+#registro .content-registro .usu-registro form span{
+	font-weight: bold;
+	font-size: 13px;
+}
+
+/*##########################################################################################################
+#################  estilos de configuracion de usuario / cambiar cuenta ####################################
+###########################################################################################################*/
+#form-config-user{
+	width: 100%;
+	height: 100%;
+}
+#form-config-user .content-cuenta{
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	width: 480px;
+	height: auto;
+	background-color: white;
+	padding: 40px 80px 40px 80px;
+	font-family: sans-serif;
+	border-radius: 8px;
+}
+#form-config-user .content-cuenta .form-cuenta h3{
+	text-align: center;
+	font-size: 25px;
+	color: grey;
+}
+#form-config-user .content-cuenta .form-cuenta form span{
+	color: grey;
+	font-size: 14px;
+}
+#form-config-user .content-cuenta .form-cuenta form .c-d-u{
+	border:none;
+	border:1px solid lightgrey;
+	width: 100%;
+	height: 45px;
+	padding-left: 15px;
+}
+#form-config-user .content-cuenta .form-cuenta form .boton-c-u{
+	border:none;
+	margin-top:15px;
+	margin-left: 30px;
+	width: 80%;
+	height: 35px;
+	cursor: pointer;
+	border:1px solid;
+	border-radius: 6px;
+	font-weight: bold;
+	color: white;
+	background-color: #3B5998;
+}
+#form-config-user .content-cuenta .form-cuenta form .boton-c-u:hover{
+	background-color: #293F6B;
+}
